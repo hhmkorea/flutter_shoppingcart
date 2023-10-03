@@ -137,7 +137,12 @@ class ShoppingCartDetail extends StatelessWidget {
               title: const Text("장바구니에 담으시겠습니까?"),
               actions: [
                 CupertinoDialogAction(
-                  child: const Text("확인"),
+                  child: const Text(
+                    "확인",
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
                   onPressed: () {
                     Navigator.pop(context);
                   },
